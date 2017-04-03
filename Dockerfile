@@ -27,6 +27,7 @@ RUN wget -c http://downloads.sourceforge.net/project/orangehrm/stable/3.3.2/oran
     rm ~/orangehrm-3.3.2.zip
 
 # Fix Permission
+RUN mv /var/www/html/orangehrm-3.3.2 var/www/html/orangehrm
 RUN cd /var/www/html/orangehrm; bash fix_permissions.sh
 
 # Update the default apache site with the config we created.
