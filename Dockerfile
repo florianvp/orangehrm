@@ -24,7 +24,6 @@ EXPOSE 80
 # Download the source
 RUN wget -c http://downloads.sourceforge.net/project/orangehrm/stable/3.3.2/orangehrm-3.3.2.zip -O ~/orangehrm-3.3.2.zip &&\
     unzip -o ~/orangehrm-3.3.2.zip -d /var/www/html && \
-    mv ~/orangehrm-3.3.2 ~/orangehrm && \
     rm ~/orangehrm-3.3.2.zip
 
 # Fix Permission
