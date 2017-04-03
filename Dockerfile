@@ -19,7 +19,7 @@ ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_PID_FILE /var/run/apache2.pid
 
 # Export port 80
-EXPOSE 80
+EXPOSE 8080
 
 # Download the source
 RUN wget -c http://downloads.sourceforge.net/project/orangehrm/stable/3.3.2/orangehrm-3.3.2.zip -O ~/orangehrm-3.3.2.zip &&\
